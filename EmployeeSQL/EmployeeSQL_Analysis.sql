@@ -23,7 +23,8 @@ JOIN departments AS d ON de.dept_no = d.dept_no
 LEFT JOIN dept_manager AS dm ON e.emp_no = dm.emp_no AND de.dept_no = dm.dept_no;
 
 -- Show the VIEW of this newly JOINed table
-SELECT * FROM employee_data;
+SELECT * FROM employee_data
+LIMIT 20;
 
 -- Use this line, only if you need to drop the view to edit, and recreate it.
 -- DROP VIEW employee_data;
@@ -35,11 +36,13 @@ SELECT * FROM employee_data;
 -- 1. List the employee number, last name, first name, sex, and salary of each employee.
 SELECT "Employee No", "Last Name", "First Name", "Sex", "Salary"
 FROM employee_data
+LIMIT 20;
 
 -- 2. List the first name, last name, and hire date for the employees who were hired in 1986.
 SELECT "First Name", "Last Name", "Hire Date"
 FROM employee_data
-WHERE EXTRACT(YEAR FROM "Hire Date") = 1986;
+WHERE EXTRACT(YEAR FROM "Hire Date") = 1986
+LIMIT 20;
 
 -- 3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
 SELECT "Department No", "Department Name", "Employee No", "Last Name", "Last Name"
@@ -49,6 +52,7 @@ WHERE "Title" LIKE 'Manager';
 -- 4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
 SELECT "Employee No", "Last Name", "First Name", "Department No", "Department Name"
 FROM employee_data
+LIMIT 20;
 
 -- 5. List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
 SELECT "First Name", "Last Name", "Sex"
@@ -59,16 +63,16 @@ WHERE "First Name" LIKE 'Hercules' AND "Last Name" LIKE 'B%';
 SELECT "Employee No", "Last Name", "First Name"
 FROM employee_data
 WHERE "Department Name" LIKE 'Sales'
+LIMIT 20;
 
 -- 7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
 SELECT "Employee No", "Last Name", "First Name", "Department Name"
 FROM employee_data
-WHERE "Department Name" IN ('Sales', 'Development');
+WHERE "Department Name" IN ('Sales', 'Development')
+LIMIT 20;
 
 -- 8. List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
 SELECT "Last Name", COUNT("Last Name") AS "Frequency Count"
 FROM employee_data
 GROUP BY "Last Name"
 ORDER BY "Frequency Count" DESC;
-
------------------------------------------------------------------------------------
