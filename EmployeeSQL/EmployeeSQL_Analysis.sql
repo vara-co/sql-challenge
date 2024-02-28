@@ -76,3 +76,5 @@ SELECT "Last Name", COUNT("Last Name") AS "Frequency Count"
 FROM employee_data
 GROUP BY "Last Name"
 ORDER BY "Frequency Count" DESC;
+
+----------------------------------------------------------------------------------------------------------
