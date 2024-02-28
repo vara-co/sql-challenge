@@ -73,9 +73,6 @@ Most of what's in this challenge, was covered in class.
 The few things that either weren't or I had to reference to, are described
 with it's source right below.
 
-ERD (Entity Relationship Diagram):
-- https://app.quickdatabasediagrams.com/
-
 Droping Constraints:
 - https://www.beekeeperstudio.io/blog/how-to-drop-a-constraint-in-postgresql
 - https://www.postgresql.org/message-id/3DFFB0670A395946974CE996C72073241C496AB2@NDHMC4SXCH.gdc4s.com
