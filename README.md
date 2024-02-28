@@ -26,7 +26,7 @@ Content of the repository
 ---------------------------------
 - EmployeeSQL directory:
     - ERD_EmployeeSQL.png  <-- Image of the ERD (Entity Relationship Diagram) for the EmployeeSQL Database
-    - ERD_PhysicalModule_DiagramCode.txt  <-- This is the code used to create the ERD above via https://app.quickdatabasediagrams.com/ NOTE: It does not contain the value lenght for columns as per my instructor's recommendation to avoid errors.
+    - ERD_PhysicalModule_DiagramCode.txt  <-- This is the code used to create the ERD above via https://app.quickdatabasediagrams.com/ NOTE: It does not contain the value length for columns as per my instructor's recommendation to avoid errors.
     - EmployeeSQL_Analysis.sql <-- SQL file with the Analysis, answering questions with the corresponding query for it
     - EmployeeSQL_Schema.sql <-- SQL file with the Schema used for the Analysis. NOTE: Follow commented sections to correctly run this schema. Value lenght for columns are defined in this schema, regardless of them not being in the ERD
     - EmployeeSQL_SchemaFROM_ERD.sql <-- SQL file with the original Schema exported from the creation of the ERD. NOTE: This had to be modified to work, which ended up being the 'EmployeeSQL_Schema.sql' file above, after such modifications.
