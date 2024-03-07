@@ -1,11 +1,10 @@
+Employee SQL Challenge (Using Postgres)<br/>
 DU - DA Module 9
 --------------------------------
 --------------------------------
-SQL Challenge (Using Postgres)
---------------------------------
---------------------------------
-by Laura Vara
---------------------------------
+<h2>by Laura Vara</h2><br/>
+
+![EmployeeSQL](https://github.com/vara-co/sql-challenge/assets/152572519/3a0253fc-3d83-4205-908f-dba7fb18beb6) <br/>
 NOTE: Please be aware that while creating the ERD, there are no value length for the columns, defined. I completed the ERD with assistance from my instructor, whom adviced to remove the value lenght to avoid errors. Thus I removed them.
 However, because these values are 10 points of the grade, I added them again in EmployeeSQL_Schema.sql file.
 
@@ -73,13 +72,13 @@ Most of what's in this challenge, was covered in class.
 The few things that either weren't or I had to reference to, are described
 with it's source right below.
 
-Droping Constraints:
-- https://www.beekeeperstudio.io/blog/how-to-drop-a-constraint-in-postgresql
-- https://www.postgresql.org/message-id/3DFFB0670A395946974CE996C72073241C496AB2@NDHMC4SXCH.gdc4s.com
+- Droping Constraints:
+    - https://www.beekeeperstudio.io/blog/how-to-drop-a-constraint-in-postgresql
+    - https://www.postgresql.org/message-id/3DFFB0670A395946974CE996C72073241C496AB2@NDHMC4SXCH.gdc4s.com
 
-Adding Constraints back:
-- https://www.postgresql.org/docs/current/sql-altertable.html
+- Adding Constraints back:
+    - https://www.postgresql.org/docs/current/sql-altertable.html
 
-Extracting the Year from the Hire Date column for a conditional type query
-- https://www.postgresqltutorial.com/postgresql-date-functions/postgresql-extract/
-- https://www.postgresql.org/docs/16/functions-datetime.html
+- Extracting the Year from the Hire Date column for a conditional type query
+    - https://www.postgresqltutorial.com/postgresql-date-functions/postgresql-extract/
+    - https://www.postgresql.org/docs/16/functions-datetime.html
